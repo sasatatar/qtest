@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
 import clsx from "clsx";
+import SearchInput from "@/components/search-input/search-input";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(inter.className)}>
         <header className={styles.header}>
-          <h1 className={styles.title}>Posts</h1>
+          <div className={styles.title}>
+            <h1>
+              <Link href="/posts">Posts</Link>
+            </h1>
+            <SearchInput placeholder="Search by author" searchParamName="q" />
+          </div>
         </header>
         <main className={styles.main}>{children}</main>
       </body>

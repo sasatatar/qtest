@@ -1,10 +1,6 @@
 import fetchJson from "@/utils/fetchJson";
 import styles from "./author.module.css";
-
-type User = {
-  id: number;
-  name: string;
-};
+import { User } from "@/types/user.types";
 
 export default async function Author({ userId }: { userId: number }) {
   const users = await fetchJson<User[]>(
