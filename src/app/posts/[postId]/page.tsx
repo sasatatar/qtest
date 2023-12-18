@@ -1,7 +1,13 @@
-export default function Post({ params }: { params: { postId: string } }) {
+import fetchJson from "@/utils/fetchJson";
+
+export default async function Post({ params }: { params: { postId: string } }) {
+  const data = await fetchJson(
+    `https://jsonplaceholder.typicode.com/posts/${params.postId}`
+  );
+
   return (
-    <main>
+    <div>
       Post <span>{params.postId}</span>
-    </main>
+    </div>
   );
 }

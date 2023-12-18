@@ -3,6 +3,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+}
+
+.posts {
+  /* margin-top: 2.5rem;
+  margin-bottom: 1.5rem; */
+  border-bottom-width: 1px;
+  border-color: rgb(17 24 39 / 0.1);
 }

@@ -1,0 +1,25 @@
+.comments {
+  padding-left: 1.5rem;
+  /* color: rgb(200 200 200 / 0.6); */
+  color: rgb(75 85 99 / 1);
+  line-height: 1.75rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.header {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-weight: 800;
+}
+
+.comment {
+  /* color: rgb(200 200 200 / 0.4); */
+  color: rgb(75 85 99 / 0.9);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
