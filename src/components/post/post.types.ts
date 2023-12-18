@@ -1,4 +1,4 @@
-export type Post = {
+export type PostData = {
   userId: number;
   id: number;
   title: string;
